@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Panel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>E-Signature</h1>
+                <p>Sign in the canvas below and save your signature as an image!</p>
+                <!-- <button id="drawRect" onclick="drawRect()">Rect</button> -->
+                <input type="button" id="drawRect" value="Rect" onclick="drawRect()" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <canvas id="rectangle" height="200" width="150" style="border: 1px solid #000000;"></canvas> -->
+                <canvas id="sig-canvas" width="620" height="160">
+                    Get a better browser, bro.
+                </canvas>
+                <textarea name="textarea" id="text123" cols="30" rows="10">123</textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" id="sig-submitBtn">Submit Signature</button>
+                <button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <textarea id="sig-dataUrl" class="form-control"
+                    rows="5">Data URL for your signature will go here!</textarea>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <img id="sig-image" src="" alt="Your signature will go here!" />
+            </div>
+        </div>
+
+        <!-- <button id="rec" value="rec" onclick="ert()">REC</button> -->
+        <div class="item" id="type">
+            <div class="resizer ne"></div>
+            <div class="resizer nw"></div>
+            <div class="resizer sw"></div>
+            <div class="resizer se"></div>
+            <textarea name="textarea" id="text123" cols="30" rows="10">Enter the Text Here</textarea>
+            <canvas id="inDivCanvas" width="50" height="50" style="border: solid;"></canvas>
+        </div>
+
+    </div>
+    <style>
+        #sig-canvas {
+            border: 2px solid #CCCCCC;
+            border-radius: 15px;
+            cursor: crosshair;
+        }
+    </style>
+
+
+    <p>Drag the ball.</p>
+
+    <img src="https://en.js.cx/clipart/soccer-gate.svg" id="gate" class="droppable">
+
+    <img src="https://en.js.cx/clipart/ball.svg" id="ball">
+
+    <br>
+    <br>
+
+    <div style="position: relative; height: 420px; width: 420px;">
+        <div id="tableDiv" style="z-index: 3; position : absolute;"></div>
+        <canvas id="canvas" width="400" height="400" style="position: absolute; z-index: 5; border: solid;"></canvas>
+    </div>
+
+    <!-- <canvas id="grid" width="610" height="610" style="border: 1px solid #00ff00;"></canvas> -->
+
+
+    <hr><br>
+
+    <canvas id="canvasClock" width="150" height="150"></canvas>
+    <br>
+    <hr><br>
+
+    <canvas id="canvasSolar" width="300" height="300"></canvas>
+
+    <hr><br>
+    <div id="picture">
+
+        <canvas id="placeCanvas" width="500" height="500">
+        </canvas>
+
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+
+    </div>
+    <hr>
+    <!-- <div id="cnvs" style="position: relative;"> -->
+        
+        <table style="z-index: 3; position: relative; width: 500; height: 500;">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <canvas id="cnvsPlace" width="500" height="500" style="position: absolute; z-index: 5; border: dotted palegreen 2px;">
+            </canvas>
+        </table>
+    <!-- </div> -->
+
+</body>
+
+
+<script>
+
+    // Grid Paper in Canvas
+
+    // var cnv = document.getElementById('grid');
+    // var ctx = cnv.getContext("2d");
+
+    // // Small Units
+    // for (var i = 5; i <= 605; i = i + 6) {
+    //     // Vertical Lines
+    //     ctx.moveTo(i, 5);
+    //     ctx.lineTo(i, 605);
+
+    //     // Horizontal Lines
+    //     ctx.moveTo(5, i);
+    //     ctx.lineTo(605, i);
+
+    //     ctx.strokeStyle = "#f0f0f0"
+    //     ctx.stroke();
+    // }
+
+    // // Major Units
+    // ctx.beginPath();
+    // for (var i = 5; i <= 605; i = i + 30) {
+    //     // Vertical Lines
+    //     ctx.moveTo(i, 5);
+    //     ctx.lineTo(i, 605);
+
+    //     // Horizontal Lines
+    //     ctx.moveTo(5, i);
+    //     ctx.lineTo(605, i);
+    //     ctx.strokeStyle = "#c0c0c0";
+    //     ctx.stroke();
+    // }
+</script>
+<script src="sign.js"></script>
+
+</html>
