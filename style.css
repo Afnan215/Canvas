@@ -90,3 +90,78 @@ th, td{
     border:1px solid black;
     
   } */
+
+  .popup {
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    min-height: 150px;
+    min-width: 300px;
+    max-height: 100vh;
+    max-width: 100vw;
+    position: absolute;
+    overflow: auto;
+    /*resize: both; !*enable this to css resize*! */
+  }
+  
+  /*Drgable */
+    
+  .popup-header {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  /*Resizeable*/
+  
+  .popup .resizer-right {
+    width: 5px;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: e-resize;
+  }
+  
+  .popup .resizer-bottom {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: n-resize;
+  }
+  
+  .popup .resizer-both {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: nw-resize;
+  }
+
+  /* #image{
+    background-image: url("./moonKnight.jpg");
+    width: 100px;
+    height: 100px;
+  } */
+
+  #myTable{
+    z-index: 3; 
+    position: relative; 
+    width: 100%; 
+    height: calc(100% - 40px);
+  }
+
+  .container{
+    display:flex;
+  }
+  

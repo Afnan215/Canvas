@@ -56,8 +56,9 @@
             <div class="resizer nw"></div>
             <div class="resizer sw"></div>
             <div class="resizer se"></div>
-            <textarea name="textarea" id="text123" cols="30" rows="10">Enter the Text Here</textarea>
-            <canvas id="inDivCanvas" width="50" height="50" style="border: solid;"></canvas>
+            <!-- <textarea name="textarea" id="text123" cols="30" rows="10">Enter the Text Here</textarea> -->
+            <canvas id="inDivCanvas" width="50" height="50" style="border: solid; position: relative;"></canvas>
+            <!-- <canvas style="border: solid;"></canvas> -->
         </div>
 
     </div>
@@ -80,7 +81,6 @@
     <br>
 
     <div style="position: relative; height: 420px; width: 420px;">
-        <div id="tableDiv" style="z-index: 3; position : absolute;"></div>
         <canvas id="canvas" width="400" height="400" style="position: absolute; z-index: 5; border: solid;"></canvas>
     </div>
 
@@ -107,9 +107,47 @@
     </div>
     <hr>
     <!-- <div id="cnvs" style="position: relative;"> -->
-        
-        <table style="z-index: 3; position: relative; width: 500; height: 500;">
-            <tr>
+
+    <!-- <table style="z-index: 3; position: relative; width: 500; height: 500;">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table> -->
+    <!-- </div> -->
+
+    <!-- <canvas id="cnvsPlace" width="1200" height="500"
+        style="position: absolute; z-index: 5; border: solid palegreen 2px;">
+    </canvas> -->
+
+    <!-- <div class="popup">
+        <div class="popup-header">Click here to move</div>
+        <table class="" style="z-index: 3; position: relative; width: 100%; height: calc(100% - 40px);"> -->
+    <!-- <tr>
+                <td colspan="3" class="popup-header">Click here to move</td>
+            </tr> -->
+    <!-- <tr>
                 <th>Company</th>
                 <th>Contact</th>
                 <th>Country</th>
@@ -129,17 +167,48 @@
                 <td>Francisco Chang</td>
                 <td>Mexico</td>
             </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <canvas id="cnvsPlace" width="500" height="500" style="position: absolute; z-index: 5; border: dotted palegreen 2px;">
-            </canvas>
         </table>
-    <!-- </div> -->
+    </div> -->
 
-    <h1> End of File </h1>
+    <!-- <div class="popup">
+        <div class="popup-header">Click here to move</div>
+        <div class="container1">
+            <div id="myfirst" class="child red good">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea> -->
+    
+
+        <div id="myDiv" class="container"></div>
+        <br>
+        <button class="addText" id="addText" style="position: relative;">Add Instance</button>
+        <br><br><br><br>
+        
+        <button id="myBtn">Try it</button>
+        <div id="appendHere"></div>
+    
+
+    <!-- <div class="popup">
+        <div class="popup-header">Click here to move</div>
+        <div class="container1">
+            <img src="./moonKnight.jpg" alt="no image" width="200px" height="250px">       
+       </div>
+   </div> -->
+    <!-- <h1> End of File </h1> -->
+
+    <div id="c1">
+        <div>item 1</div>
+    </div>
+
+    <div id="c2">
+        <div>item 2</div>
+    </div>
+
+
+    <button id="btn">switch</button>
+
 
 </body>
 
